@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import photoProfil from './assets/photo_profil.png';
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
+import cv from './assets/CV.pdf';
 
 const IntroductionSection = styled.section`
   background: linear-gradient(to top, #bdc3c7, #2c3e50);
@@ -63,7 +64,7 @@ function App() {
           <div>
             <h1>Hi ! I'm <Name>Josué Ferreira</Name></h1>
             <h2>Web Developper</h2>
-            <Button href="../public/CV.pdf" download>Download CV</Button>
+            <Button href={cv} download>Download CV</Button>
           </div>
           <ImgPhotoProfil src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
         </Welcome>
