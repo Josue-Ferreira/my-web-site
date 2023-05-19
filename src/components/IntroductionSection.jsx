@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {AiOutlineArrowDown} from 'react-icons/ai';
 import NavBar from './NavBar';
-import photoProfil from '../assets/photo_profil.png';
+import photoProfil from '../assets/photo_profil.resized.png';
 import github from '../assets/logos/github.png';
 import linkedin from '../assets/logos/linkedin.png';
 import cv from '../assets/CV.pdf';

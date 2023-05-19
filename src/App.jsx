@@ -24,12 +24,32 @@ function App() {
           </div> 
         )
 
+        case 'aboutme': return (
+          <div>
+            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
+          </div>
+        )
+
+        case 'hobbies': return (
+          <div>
+            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
+          </div>
+        )
+
         case 'games': return (
-          <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+          <div>
+            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
+          </div>
         )
 
         case 'contactme' : return (
-          <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+          <div>
+            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
+          </div>
         )
       }
      })()}
