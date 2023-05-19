@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SkillsSection from './components/SkillsSection';
 import IntroductionSection from './components/IntroductionSection';
 import NavBar from './components/NavBar';
+import ContactMe from './components/ContactMe';
 
 
 function App() {
@@ -47,8 +48,7 @@ function App() {
 
         case 'contactme' : return (
           <div>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
-            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
+            <ContactMe page={page} setPage={setPage} language={language} setLanguage={setLanguage}/>
           </div>
         )
       }
