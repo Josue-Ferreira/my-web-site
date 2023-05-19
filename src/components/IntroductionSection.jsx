@@ -55,12 +55,12 @@ const IntroductionSection = ({page, setPage, language, setLanguage}) => {
         <Section>
             <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <Welcome>
-                <div>
+                <div id="welcome-text">
                     <h1>Hi ! I'm <Name>Josué Ferreira</Name></h1>
                     <h2>Web Developper</h2>
                     <Button href={cv} download>Download CV</Button>
                 </div>
-                <ImgPhotoProfil src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
+                <ImgPhotoProfil id="photo-profil" src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
             </Welcome>
             <Links>
                 <a href="https://github.com/Josue-Ferreira" target="_blank">

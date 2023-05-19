@@ -18,3 +18,35 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
+
+@keyframes showPhotoProfil {
+    from {
+        transform: translate(10vw, 0px);
+        opacity: 0.2;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+#photo-profil {
+    animation-name: showPhotoProfil;
+    animation-duration: 2s;
+}
+
+@keyframes showWelcomeText {
+    from {
+        transform: translate(-10vw, 0px);
+        opacity: 0.2;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+#welcome-text {
+    animation-name: showWelcomeText;
+    animation-duration: 2s;
+}
