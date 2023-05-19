@@ -1,58 +1,70 @@
+import HtmlCss from './logos/css3-html5.png'
+import Figma from './logos/figma.png'
+import Git from './logos/git.png'
+import JavaSc from './logos/js.png'
+import Linux from './logos/linux.png'
+import MySQL from './logos/mysql.png'
+import NodeJS from './logos/nodejs.png'
+import Npm from './logos/npm.png'
+import ReactLogo from './logos/react.svg'
+import Vite from './logos/vite.svg'
+import Vscode from './logos/vscode.png'
+
 const skills = [
     {
         name: 'CSS3 / HTML5',
         category: 'programming',
-        picture: './src/assets/logos/css3-html5.png',
+        picture: HtmlCss,
     },
     {
         name: 'JavaScript',
         category: 'programming',
-        picture: './src/assets/logos/js.png',
+        picture: JavaSc,
     },
     {
         name: 'React & ReactStrap',
         category: 'programming',
-        picture: './src/assets/logos/react.svg',
+        picture: ReactLogo,
     },
     {
         name: 'MySQL',
         category: 'programming',
-        picture: './src/assets/logos/mysql.png',
+        picture: MySQL,
     },
     {
         name: 'Git / GitHub',
         category: 'softwares',
-        picture: './src/assets/logos/git.png',
+        picture: Git,
     },
     {
         name: 'Visual Studio Code',
         category: 'softwares',
-        picture: './src/assets/logos/vscode.png',
+        picture: Vscode,
     },
     {
         name: 'Linux CLI',
         category: 'softwares',
-        picture: './src/assets/logos/linux.png',
+        picture: Linux,
     },
     {
         name: 'NodeJS',
         category: 'softwares',
-        picture: './src/assets/logos/nodejs.png',
+        picture: NodeJS,
     },
     {
         name: 'NPM',
         category: 'softwares',
-        picture: './src/assets/logos/npm.png',
+        picture: Npm,
     },
     {
         name: 'ViteJS',
         category: 'softwares',
-        picture: './src/assets/logos/vite.svg',
+        picture: Vite,
     },
     {
         name: 'Figma',
         category: 'design',
-        picture: './src/assets/logos/figma.png',
+        picture: Figma,
     },
 ];
 
