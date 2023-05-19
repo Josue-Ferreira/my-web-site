@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import {AiOutlineArrowDown} from 'react-icons/ai';
 import NavBar from './components/NavBar';
+import SkillsSection from './components/SkillsSection';
 import photoProfil from './assets/photo_profil.png';
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
 import cv from './assets/CV.pdf';
 
 const IntroductionSection = styled.section`
-  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+  background: linear-gradient(to top, rgba(189,195,199,0), #2c3e50); //#bdc3c7
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -78,6 +79,7 @@ function App() {
           <AiOutlineArrowDown id='arrow' style={{flex: '1', fontSize: '3em'}} />
         </Links>
       </IntroductionSection>
+      <SkillsSection />
     </div>
   )
 }
