@@ -37,7 +37,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         style={page === 'home' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                         onClick={() => setPage('home')}
                         >
-                            HOME
+                            {language === 'en' ? "HOME" : "ACCUEIL"}
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -47,7 +47,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         style={page === 'aboutme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                         onClick={() => setPage('aboutme')}
                         >
-                            ABOUT ME
+                            {language === 'en' ? "ABOUT ME" : "PRESENTATION"}
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -57,7 +57,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         style={page === 'hobbies' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                         onClick={() => setPage('hobbies')}
                         >
-                            HOBBIES
+                            {language === 'en' ? "HOBBIES" : "LOISIRS"}
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -67,7 +67,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         style={page === 'games' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                         onClick={() => setPage('games')}
                         >
-                            GAMES
+                            {language === 'en' ? "GAMES" : "JEUX"}
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -77,7 +77,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         style={page === 'contactme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                         onClick={() => setPage('contactme')}
                         >
-                            CONTACT ME
+                            {language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}
                     </NavLink>
                 </NavItem>
             </Nav>

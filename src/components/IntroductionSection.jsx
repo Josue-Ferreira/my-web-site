@@ -56,8 +56,8 @@ const IntroductionSection = ({page, setPage, language, setLanguage}) => {
             <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <Welcome>
                 <div id="welcome-text">
-                    <h1>Hi ! I'm <Name>Josué Ferreira</Name></h1>
-                    <h2>Web Developper</h2>
+                    <h1>{language === 'en' ? "Hi ! I'm " : "Salut ! Je suis "}<Name>Josué Ferreira</Name></h1>
+                    <h2>{language === 'en' ? "React Web Developper" : "Développeur Web React"}</h2>
                     <Button href={cv} download>Download CV</Button>
                 </div>
                 <ImgPhotoProfil id="photo-profil" src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
