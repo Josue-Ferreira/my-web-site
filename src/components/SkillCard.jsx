@@ -1,20 +1,26 @@
 import React from 'react';
 import {Card, CardBody, CardTitle} from 'reactstrap';
+import styled from 'styled-components';
 
-const SkillCard = () => {
+const Picture = styled.img`
+    height: 5rem;
+    margin-bottom: 10px;
+`;
+
+const SkillCard = ({cardTitle,cardPicture}) => {
     return (
         <Card
+            className="text-center"
             style={{
-                width: '18rem'
+                // width: '18rem',
+                borderRadius: '40px',
+                boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.24)'
             }}
             >
-            <img
-                alt="Sample"
-                src="https://picsum.photos/300/200"
-            />
             <CardBody>
+                <Picture src={cardPicture} alt="" />
                 <CardTitle tag="h5">
-                    Card title
+                    {cardTitle}
                 </CardTitle>
             </CardBody>
         </Card>

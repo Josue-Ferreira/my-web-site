@@ -6,8 +6,8 @@ import {AiOutlineArrowDown} from 'react-icons/ai';
 import NavBar from './components/NavBar';
 import SkillsSection from './components/SkillsSection';
 import photoProfil from './assets/photo_profil.png';
-import github from './assets/github.png';
-import linkedin from './assets/linkedin.png';
+import github from './assets/logos/github.png';
+import linkedin from './assets/logos/linkedin.png';
 import cv from './assets/CV.pdf';
 
 const IntroductionSection = styled.section`

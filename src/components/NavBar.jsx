@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import logo from '../assets/logo1.svg';
+import logo from '../assets/logos/mylogo.svg';
 import styled from 'styled-components';
 
 const Img = styled.img`
