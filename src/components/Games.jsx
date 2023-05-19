@@ -1,6 +1,6 @@
 import React from 'react';
-import spaceInvader from '../assets/spaceInvader.png'
-import cookieClicker from '../assets/cookieClicker.png'
+import spaceInvader from '../assets/spaceInvader.resized.png'
+import cookieClicker from '../assets/cookieClicker.resized.png'
 import NavBar from './NavBar';
 import styled from 'styled-components';
 
@@ -13,13 +13,21 @@ const Section = styled.section`
 
 const GameContainer = styled.div`
     margin: 5vh 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
-    justify-content: space-evenly;
+    justify-items: center;
 `;
 
-const ImgGame = styled.img`
-  height: 30vh;
+const Button = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  background-color: #F1DB66;
+  border-radius: 40px;
+  padding: 5px 5vw;
+  margin: 1vh 0;
+  color: #2C3E50;
 `;
 
 const Games = ({page, setPage, language, setLanguage}) => {
@@ -27,18 +35,18 @@ const Games = ({page, setPage, language, setLanguage}) => {
         <Section>
             <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <GameContainer>
-                <ImgGame src={spaceInvader} alt="Own Space Invader game picture" />
-                <div>
+                <img src={spaceInvader} alt="Own Space Invader game picture" />
+                <div style={{padding: '20px'}}>
                     <h3 style={{color: '#F1DB66'}}>Space Invader</h3>
-                    <p>I had created a Space Invader game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in web browsers</p>
+                    <p>I had created a Space Invader game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
+                    <Button href='https://josue-ferreira.github.io/galaxia/' target='_blank'>Try it !</Button>
                 </div>
-            </GameContainer>
-            <GameContainer>
                 <div style={{padding: '20px'}}>
                     <h3 style={{color: '#F1DB66'}}>Cookie Clicker</h3>
-                    <p>With Stéphanie Gentil, we had created a Cookie Clicker game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in web browsers</p>
+                    <p>With Stéphanie Gentil, we had created a Cookie Clicker game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
+                    <Button href='https://josue-ferreira.github.io/cookies-clicker/' target='_blank'>Try it !</Button>
                 </div>
-                <ImgGame src={cookieClicker} alt="Own Cookie Clicker game picture" />
+                <img src={cookieClicker} alt="Own Cookie Clicker game picture" />
             </GameContainer>
         </Section>
     );
