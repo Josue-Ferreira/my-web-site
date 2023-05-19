@@ -2,57 +2,57 @@ const skills = [
     {
         name: 'CSS3 / HTML5',
         category: 'programming',
-        picture: './src/assets/css3-html5.png',
+        picture: './src/assets/logos/css3-html5.png',
     },
     {
         name: 'JavaScript',
         category: 'programming',
-        picture: './src/assets/js.png',
+        picture: './src/assets/logos/js.png',
     },
     {
         name: 'React & ReactStrap',
         category: 'programming',
-        picture: './src/assets/react.svg',
+        picture: './src/assets/logos/react.svg',
     },
     {
         name: 'MySQL',
         category: 'programming',
-        picture: './src/assets/mysql.png',
+        picture: './src/assets/logos/mysql.png',
     },
     {
         name: 'Git / GitHub',
         category: 'softwares',
-        picture: './src/assets/git.png',
+        picture: './src/assets/logos/git.png',
     },
     {
         name: 'Visual Studio Code',
         category: 'softwares',
-        picture: './src/assets/vscode.png',
+        picture: './src/assets/logos/vscode.png',
     },
     {
         name: 'Linux CLI',
         category: 'softwares',
-        picture: './src/assets/linux.png',
+        picture: './src/assets/logos/linux.png',
     },
     {
         name: 'NodeJS',
         category: 'softwares',
-        picture: './src/assets/nodejs.png',
+        picture: './src/assets/logos/nodejs.png',
     },
     {
         name: 'NPM',
         category: 'softwares',
-        picture: './src/assets/npm.png',
+        picture: './src/assets/logos/npm.png',
     },
     {
         name: 'ViteJS',
         category: 'softwares',
-        picture: './src/assets/vite.svg',
+        picture: './src/assets/logos/vite.svg',
     },
     {
         name: 'Figma',
         category: 'design',
-        picture: './src/assets/figma.png',
+        picture: './src/assets/logos/figma.png',
     },
 ];
 
