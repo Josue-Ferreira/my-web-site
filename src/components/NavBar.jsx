@@ -40,7 +40,7 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                             HOME
                     </NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                     <NavLink 
                         href="#" 
                         className={page === 'aboutme' ? 'active' : ''} 
@@ -59,13 +59,13 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                         >
                             HOBBIES
                     </NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                     <NavLink 
                         href="#" 
-                        className={page === 'hobbies' ? 'active' : ''} 
-                        style={page === 'hobbies' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
-                        onClick={() => setPage('hobbies')}
+                        className={page === 'games' ? 'active' : ''} 
+                        style={page === 'games' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                        onClick={() => setPage('games')}
                         >
                             GAMES
                     </NavLink>
