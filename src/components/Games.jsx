@@ -16,6 +16,7 @@ const GameContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px 0;
     align-items: center;
     justify-items: center;
 `;
@@ -36,17 +37,17 @@ const Games = ({page, setPage, language, setLanguage}) => {
             <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <GameContainer>
                 <img src={spaceInvader} alt="Own Space Invader game picture" />
-                <div style={{padding: '20px'}}>
+                <div style={{width: '70%'}}>
                     <h3 style={{color: '#F1DB66'}}>Space Invader</h3>
                     <p>I had created a Space Invader game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
                     <Button href='https://josue-ferreira.github.io/galaxia/' target='_blank'>Try it !</Button>
                 </div>
-                <div style={{padding: '20px'}}>
+                <img src={cookieClicker} alt="Own Cookie Clicker game picture" />
+                <div style={{width: '70%'}}>
                     <h3 style={{color: '#F1DB66'}}>Cookie Clicker</h3>
                     <p>With Stéphanie Gentil, we had created a Cookie Clicker game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
                     <Button href='https://josue-ferreira.github.io/cookies-clicker/' target='_blank'>Try it !</Button>
                 </div>
-                <img src={cookieClicker} alt="Own Cookie Clicker game picture" />
             </GameContainer>
         </Section>
     );
