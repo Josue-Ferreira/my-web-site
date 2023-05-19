@@ -5,6 +5,7 @@ import SkillsSection from './components/SkillsSection';
 import IntroductionSection from './components/IntroductionSection';
 import NavBar from './components/NavBar';
 import ContactMe from './components/ContactMe';
+import Games from './components/Games';
 
 
 function App() {
@@ -40,16 +41,11 @@ function App() {
         )
 
         case 'games': return (
-          <div>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
-            <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
-          </div>
+          <Games page={page} setPage={setPage} language={language} setLanguage={setLanguage}/>
         )
 
         case 'contactme' : return (
-          <div>
-            <ContactMe page={page} setPage={setPage} language={language} setLanguage={setLanguage}/>
-          </div>
+          <ContactMe page={page} setPage={setPage} language={language} setLanguage={setLanguage}/>
         )
       }
      })()}
