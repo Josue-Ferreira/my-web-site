@@ -40,7 +40,7 @@ function App() {
           </div>
         )
 
-        case 'games': return (
+        case 'projects': return (
           <Games page={page} setPage={setPage} language={language} setLanguage={setLanguage}/>
         )
 

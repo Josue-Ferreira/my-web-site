@@ -63,11 +63,11 @@ const NavBar = ({page, setPage, language, setLanguage}) => {
                 <NavItem>
                     <NavLink 
                         href="#" 
-                        className={page === 'games' ? 'active' : ''} 
-                        style={page === 'games' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
-                        onClick={() => setPage('games')}
+                        className={page === 'projects' ? 'active' : ''} 
+                        style={page === 'projects' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                        onClick={() => setPage('projects')}
                         >
-                            {language === 'en' ? "GAMES" : "JEUX"}
+                            {language === 'en' ? "PROJECTS" : "PROJETS"}
                     </NavLink>
                 </NavItem>
                 <NavItem>
