@@ -25,7 +25,31 @@ const SkillsSection = () => {
                 <Title>Programming skills</Title>
                 <Container>
                     <Row xs="3">
-                        {dataSkills.map((skill) => (
+                        {dataSkills.filter(skill => skill.category === 'programming').map((skill) => (
+                            <Col key={skill.name} style={{margin: '10px 0'}}>
+                                <SkillCard cardTitle={skill.name} cardPicture={skill.picture}/>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </SkillContainer>
+            <SkillContainer>
+                <Container>
+                    <Row xs="3">
+                        {dataSkills.filter(skill => skill.category === 'softwares').map((skill) => (
+                            <Col key={skill.name} style={{margin: '10px 0'}}>
+                                <SkillCard cardTitle={skill.name} cardPicture={skill.picture}/>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+                <Title>Dev Tools</Title>
+            </SkillContainer>
+            <SkillContainer>
+            <Title>Design Tools</Title>
+                <Container>
+                    <Row xs="3">
+                        {dataSkills.filter(skill => skill.category === 'design').map((skill) => (
                             <Col key={skill.name} style={{margin: '10px 0'}}>
                                 <SkillCard cardTitle={skill.name} cardPicture={skill.picture}/>
                             </Col>
