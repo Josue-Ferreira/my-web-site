@@ -34,6 +34,7 @@ const SkillsSection = () => {
                 </Container>
             </SkillContainer>
             <SkillContainer>
+                <Title>Dev Tools</Title>
                 <Container>
                     <Row xs="3">
                         {dataSkills.filter(skill => skill.category === 'softwares').map((skill) => (
@@ -43,10 +44,9 @@ const SkillsSection = () => {
                         ))}
                     </Row>
                 </Container>
-                <Title>Dev Tools</Title>
             </SkillContainer>
             <SkillContainer>
-            <Title>Design Tools</Title>
+                <Title>Design Tools</Title>
                 <Container>
                     <Row xs="3">
                         {dataSkills.filter(skill => skill.category === 'design').map((skill) => (
