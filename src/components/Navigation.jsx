@@ -23,7 +23,7 @@ const Container = styled.div`
     align-items: center; 
     margin: 0 10px;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
         display: none;
     }
 `;
@@ -100,8 +100,8 @@ const Navigation = ({page, setPage, language, setLanguage}) => {
                                 {language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}
                         </NavLink>
                     </NavItem>
-                    <NavItem style={language === 'en' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('en')}>EN</NavItem>
-                    <NavItem style={language === 'fr' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('fr')}>FR</NavItem>
+                    <NavItem className='display-language' style={language === 'en' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('en')}>EN</NavItem>
+                    <NavItem className='display-language' style={language === 'fr' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('fr')}>FR</NavItem>
                 </Nav>
             </Collapse>
             <Container>

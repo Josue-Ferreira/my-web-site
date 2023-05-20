@@ -50,3 +50,13 @@
     animation-name: showWelcomeText;
     animation-duration: 2s;
 }
+
+.display-language {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .display-language {
+        display: block;
+    }
+}
