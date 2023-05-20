@@ -12,12 +12,20 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  @media screen and (max-width: 768px){
+    height: auto;
+  }
 `;
 
 const Welcome = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    flex-direction: column-reverse;
+  }
 `;
 
 const Button = styled.a`
@@ -32,6 +40,11 @@ const Button = styled.a`
 
 const ImgPhotoProfil = styled.img`
   height: 70vh;
+
+  @media screen and (max-width: 768px){
+    height: 50vh;
+    margin-bottom: 10px;
+  }
 `;
 
 const Name = styled.strong`
