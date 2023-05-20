@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SkillsSection from './components/SkillsSection';
 import IntroductionSection from './components/IntroductionSection';
-import NavBar from './components/NavBar';
+import Navigation from './components/Navigation';
 import ContactMe from './components/ContactMe';
 import Games from './components/Games';
 
@@ -28,14 +28,14 @@ function App() {
 
         case 'aboutme': return (
           <div>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
           </div>
         )
 
         case 'hobbies': return (
           <div>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <div style={{textAlign: 'center', fontSize: '3em'}}>COMING SOON</div>
           </div>
         )

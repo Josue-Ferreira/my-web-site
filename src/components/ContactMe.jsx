@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 import linkedin from '../assets/logos/linkedin.png';
 
 const Section = styled.section`
@@ -41,7 +41,7 @@ const Button = styled.a`
 const ContactMe = ({page, setPage, language, setLanguage}) => {
     return (
         <Section>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <Contact>
                 <Title>Contact Details</Title>
                 <ul style={{listStyleType: 'none'}}>

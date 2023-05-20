@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {AiOutlineArrowDown} from 'react-icons/ai';
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 import photoProfil from '../assets/photo_profil.resized.png';
 import github from '../assets/logos/github.png';
 import linkedin from '../assets/logos/linkedin.png';
@@ -66,7 +66,7 @@ const ImgLink = styled.img`
 const IntroductionSection = ({page, setPage, language, setLanguage}) => {
     return (
         <Section>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <Welcome>
                 <div id="welcome-text">
                     <h1>{language === 'en' ? "Hi ! I'm " : "Salut ! Je suis "}<Name>Josué Ferreira</Name></h1>

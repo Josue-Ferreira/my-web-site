@@ -1,7 +1,7 @@
 import React from 'react';
 import spaceInvader from '../assets/spaceInvader.resized.png'
 import cookieClicker from '../assets/cookieClicker.resized.png'
-import NavBar from './NavBar';
+import Navigation from './Navigation';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -34,7 +34,7 @@ const Button = styled.a`
 const Games = ({page, setPage, language, setLanguage}) => {
     return (
         <Section>
-            <NavBar page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <GameContainer>
                 <img src={spaceInvader} alt="Own Space Invader game picture" />
                 <div style={{width: '70%'}}>
