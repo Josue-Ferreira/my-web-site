@@ -19,6 +19,11 @@ const GameContainer = styled.div`
     gap: 20px 0;
     align-items: center;
     justify-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const Button = styled.a`
@@ -29,6 +34,10 @@ const Button = styled.a`
   padding: 5px 5vw;
   margin: 1vh 0;
   color: #2C3E50;
+
+  @media screen and (max-width: 767px) {
+        display: none;
+    }
 `;
 
 const Games = ({page, setPage, language, setLanguage}) => {
