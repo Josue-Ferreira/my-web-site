@@ -63,16 +63,23 @@ const ImgLink = styled.img`
   margin-right: 10px;
 `;
 
+const Hello = styled.div`
+  @media screen and (max-width: 400px){
+    width: 90%;
+    margin: auto;
+  }
+`;
+
 const IntroductionSection = ({page, setPage, language, setLanguage}) => {
     return (
         <Section>
             <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
             <Welcome>
-                <div id="welcome-text">
+                <Hello id="welcome-text">
                     <h1>{language === 'en' ? "Hi ! I'm " : "Salut ! Je suis "}<Name>Josué Ferreira</Name></h1>
                     <h2>{language === 'en' ? "React Web Developper" : "Développeur Web React"}</h2>
-                    <Button href={cv} download>Download CV</Button>
-                </div>
+                    <Button href={cv} download>{language === 'en' ? "Download CV" : "Télécharger mon CV"}</Button>
+                </Hello>
                 <ImgPhotoProfil id="photo-profil" src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
             </Welcome>
             <Links>
