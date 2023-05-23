@@ -5,6 +5,7 @@ import JavaSc from './logos/js.png'
 import Linux from './logos/linux.png'
 import MySQL from './logos/mysql.png'
 import NodeJS from './logos/nodejs.png'
+import Express from './logos/express.png'
 import Npm from './logos/npm.png'
 import ReactLogo from './logos/react.svg'
 import Vite from './logos/vite.svg'
@@ -27,6 +28,11 @@ const skills = [
         picture: ReactLogo,
     },
     {
+        name: 'Express for Node.js',
+        category: 'programming',
+        picture: Express,
+    },
+    {
         name: 'MySQL',
         category: 'programming',
         picture: MySQL,
@@ -47,7 +53,7 @@ const skills = [
         picture: Linux,
     },
     {
-        name: 'NodeJS',
+        name: 'Node.js',
         category: 'softwares',
         picture: NodeJS,
     },
