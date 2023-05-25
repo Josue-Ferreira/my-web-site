@@ -68,6 +68,18 @@ const SkillsSection = () => {
                 </Container>
             </SkillContainer>
             <SkillContainer>
+                <Title>API REST</Title>
+                <Container style={{gridTemplateRows: '1fr'}}>
+                    {/* <Row xs="3"> */}
+                        {dataSkills.filter(skill => skill.category === 'api').map((skill) => (
+                            // <Col key={skill.name} style={{margin: '10px 0'}}>
+                                <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
+                            // </Col>
+                        ))}
+                    {/* </Row> */}
+                </Container>
+            </SkillContainer>
+            <SkillContainer>
                 <Title>Design Tools</Title>
                 <Container style={{gridTemplateRows: '1fr'}}>
                     {/* <Row xs="3"> */}

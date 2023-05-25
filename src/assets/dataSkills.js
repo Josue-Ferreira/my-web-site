@@ -10,6 +10,8 @@ import Npm from './logos/npm.png'
 import ReactLogo from './logos/react.svg'
 import Vite from './logos/vite.svg'
 import Vscode from './logos/vscode.png'
+import Mapbox from './logos/mapbox.png'
+import Opendatasoft from './logos/opendatasoft.png'
 
 const skills = [
     {
@@ -71,6 +73,16 @@ const skills = [
         name: 'Figma',
         category: 'design',
         picture: Figma,
+    },
+    {
+        name: 'MapBox',
+        category: 'api',
+        picture: Mapbox,
+    },
+    {
+        name: 'Opendatasoft',
+        category: 'api',
+        picture: Opendatasoft,
     },
 ];
 

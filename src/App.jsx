@@ -55,15 +55,3 @@ function App() {
 }
 
 export default App
-
-
-// {page === 'home' ? 
-// <div>
-//   <IntroductionSection 
-//     page={page} setPage={setPage} 
-//     language={language} setLanguage={setLanguage} 
-//   />
-//   <SkillsSection />
-// </div> 
-// : null
-// }
