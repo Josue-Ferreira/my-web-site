@@ -1,7 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import spaceInvader from '../assets/spaceInvader.resized.png'
 import cookieClicker from '../assets/cookieClicker.resized.png'
-import Navigation from './Navigation';
+import Navigation from '../components/Navigation';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -40,10 +41,12 @@ const Button = styled.a`
     }
 `;
 
-const Games = ({page, setPage, language, setLanguage}) => {
+const Games = () => {
+    const [language, setLanguage] = useState('en');
+
     return (
         <Section>
-            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={'projects'} language={language} setLanguage={setLanguage} />
             <GameContainer>
                 <img src={spaceInvader} alt="Own Space Invader game picture" />
                 <div style={{width: '70%'}}>

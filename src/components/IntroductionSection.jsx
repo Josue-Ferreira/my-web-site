@@ -70,10 +70,10 @@ const Hello = styled.div`
   }
 `;
 
-const IntroductionSection = ({page, setPage, language, setLanguage}) => {
+const IntroductionSection = ({page, language, setLanguage}) => {
     return (
         <Section>
-            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={page} language={language} setLanguage={setLanguage} />
             <Welcome>
                 <Hello id="welcome-text">
                     <h1>{language === 'en' ? "Hi ! I'm " : "Salut ! Je suis "}<Name>Josué Ferreira</Name></h1>

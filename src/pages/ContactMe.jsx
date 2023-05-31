@@ -1,6 +1,7 @@
 import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation';
+import Navigation from '../components/Navigation';
 import linkedin from '../assets/logos/linkedin.png';
 
 const Section = styled.section`
@@ -38,10 +39,12 @@ const Button = styled.a`
   color: #2C3E50;
 `;
 
-const ContactMe = ({page, setPage, language, setLanguage}) => {
+const ContactMe = () => {
+    const [language, setLanguage] = useState('en');
+
     return (
         <Section>
-            <Navigation page={page} setPage={setPage} language={language} setLanguage={setLanguage} />
+            <Navigation page={'contactme'} language={language} setLanguage={setLanguage} />
             <Contact>
                 <Title>Contact Details</Title>
                 <ul style={{listStyleType: 'none'}}>

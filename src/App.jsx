@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SkillsSection from './components/SkillsSection';
 import IntroductionSection from './components/IntroductionSection';
 import Navigation from './components/Navigation';
-import ContactMe from './components/ContactMe';
-import Games from './components/Games';
+import ContactMe from './pages/ContactMe';
+import Games from './pages/Games';
 
 
 function App() {
