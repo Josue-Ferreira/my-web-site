@@ -6,6 +6,7 @@ import photoProfil from '../assets/photo_profil.resized.png';
 import github from '../assets/logos/github.png';
 import linkedin from '../assets/logos/linkedin.png';
 import cv from '../assets/CV.pdf';
+import textLang from '../assets/text-lang.json';
 
 const Section = styled.section`
   background: linear-gradient(to top, rgba(189,195,199,0), #2c3e50); //#bdc3c7
@@ -76,9 +77,9 @@ const IntroductionSection = ({page, language, setLanguage}) => {
             <Navigation page={page} language={language} setLanguage={setLanguage} />
             <Welcome>
                 <Hello id="welcome-text">
-                    <h1>{language === 'en' ? "Hi ! I'm " : "Salut ! Je suis "}<Name>Josué Ferreira</Name></h1>
-                    <h2>{language === 'en' ? "React Web Developper" : "Développeur Web React"}</h2>
-                    <Button href={cv} download>{language === 'en' ? "Download CV" : "Télécharger mon CV"}</Button>
+                    <h1>{textLang[language].pages.home.h1}<Name>Josué Ferreira</Name></h1>
+                    <h2>{textLang[language].pages.home.h2}</h2>
+                    <Button href={cv} download>{textLang[language].pages.home.cv}</Button>
                 </Hello>
                 <ImgPhotoProfil id="photo-profil" src={photoProfil} alt="Josué Ferreira photo" title="Josué Ferreira"/>
             </Welcome>

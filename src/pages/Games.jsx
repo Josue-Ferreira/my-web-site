@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import parse from 'html-react-parser';
 import spaceInvader from '../assets/spaceInvader.resized.png'
 import cookieClicker from '../assets/cookieClicker.resized.png'
 import Navigation from '../components/Navigation';
 import styled from 'styled-components';
+import textLang from '../assets/text-lang.json';
 
 const Section = styled.section`
   background: linear-gradient(to top, rgba(189,195,199,0), #2c3e50); //#bdc3c7
@@ -43,24 +45,24 @@ const Button = styled.a`
 `;
 
 const Games = () => {
-    const {page, lang} = useParams();
+    const {lang} = useParams();
     const [language, setLanguage] = useState(lang ? lang : 'en');
-
+   
     return (
         <Section>
             <Navigation page={'projects'} language={language} setLanguage={setLanguage} />
             <GameContainer>
                 <img src={spaceInvader} alt="Own Space Invader game picture" />
                 <div style={{width: '70%'}}>
-                    <h3 style={{color: '#F1DB66'}}>Space Invader</h3>
-                    <p>I had created a Space Invader game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
-                    <Button href='https://josue-ferreira.github.io/galaxia/' target='_blank'>Try it !</Button>
+                    <h3 style={{color: '#F1DB66'}}>{textLang[language].pages.projects.project[0].h3}</h3>
+                    <p>{parse(textLang[language].pages.projects.project[0].description)}</p>
+                    <Button href={textLang[language].pages.projects.project[0].link} target='_blank'>{textLang[language].pages.projects.linkText}</Button>
                 </div>
                 <img src={cookieClicker} alt="Own Cookie Clicker game picture" />
                 <div style={{width: '70%'}}>
-                    <h3 style={{color: '#F1DB66'}}>Cookie Clicker</h3>
-                    <p>With Stéphanie Gentil, we had created a Cookie Clicker game with <em style={{color: '#F1DB66'}}>JavaScript Vanilla</em> to work in desktop web browsers</p>
-                    <Button href='https://josue-ferreira.github.io/cookies-clicker/' target='_blank'>Try it !</Button>
+                    <h3 style={{color: '#F1DB66'}}>{textLang[language].pages.projects.project[1].h3}</h3>
+                    <p>{parse(textLang[language].pages.projects.project[1].description)}</p>
+                    <Button href={textLang[language].pages.projects.project[1].link} target='_blank'>{textLang[language].pages.projects.linkText}</Button>
                 </div>
             </GameContainer>
         </Section>

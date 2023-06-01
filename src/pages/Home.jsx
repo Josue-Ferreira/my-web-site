@@ -14,7 +14,7 @@ const Home = () => {
               page={'home'}
               language={language} setLanguage={setLanguage} 
             />
-            <SkillsSection />  
+            <SkillsSection language={language} />  
         </>
     );
 };
