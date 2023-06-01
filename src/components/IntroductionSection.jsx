@@ -75,16 +75,16 @@ const IntroductionSection = ({page, language, setLanguage}) => {
                 <Hello id="welcome-text">
                     <h1>{textLang[language].pages.home.h1}<Name>Josué Ferreira</Name></h1>
                     <h2>{textLang[language].pages.home.h2}</h2>
-                    <Button href='CV.pdf' download>{textLang[language].pages.home.cv}</Button>
+                    <Button href='/CV.pdf' download>{textLang[language].pages.home.cv}</Button>
                 </Hello>
                 <ImgPhotoProfil id="photo-profil" src='photo_profil.resized.png' alt="Josué Ferreira photo" title="Josué Ferreira"/>
             </Welcome>
             <Links>
                 <a href="https://github.com/Josue-Ferreira" target="_blank">
-                    <ImgLink src='logos/github.png' alt="GitHub link" title='Link to GitHub'/>
+                    <ImgLink src='/logos/github.png' alt="GitHub link" title='Link to GitHub'/>
                 </a>
                 <a href="https://www.linkedin.com/in/josué-ferreira-694095276" target="_blank">
-                    <ImgLink src='logos/linkedin.png' alt="LinkedIn link" title='Link to LinkedIn' />
+                    <ImgLink src='/logos/linkedin.png' alt="LinkedIn link" title='Link to LinkedIn' />
                 </a>
                 <AiOutlineArrowDown id='arrow' style={{flex: '1', fontSize: '3em'}} />
             </Links>
