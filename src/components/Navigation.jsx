@@ -45,7 +45,7 @@ const Navigation = ({page, language, setLanguage}) => {
     return (
         <Navbar expand={'md'}  >
             <NavbarBrand href="/">
-                <Img src='logos/mylogo.svg' alt="logo-josué-ferreira" />
+                <Img src='/logos/mylogo.svg' alt="logo-josué-ferreira" />
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar style={{justifyContent: 'center'}}>
