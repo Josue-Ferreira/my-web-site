@@ -10,7 +10,6 @@ import {
     NavItem,
     NavLink
   } from 'reactstrap';
-import logo from '../assets/logos/mylogo.svg';
 import styled from 'styled-components';
 
 const Img = styled.img`
@@ -46,7 +45,7 @@ const Navigation = ({page, language, setLanguage}) => {
     return (
         <Navbar expand={'md'}  >
             <NavbarBrand href="/">
-                <Img src={logo} alt="logo-josué-ferreira" />
+                <Img src='../../public/assets/logos/mylogo.svg' alt="logo-josué-ferreira" />
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar style={{justifyContent: 'center'}}>
