@@ -1,0 +1,76 @@
+{
+    "en": {
+            "pages":{
+                "home": 
+                {
+                    "h1": "Hi ! I'm ",
+                    "h2": "React Web Developper",
+                    "cv": "Download CV",
+                    "skillsTitle": [
+                        "Programming skills",
+                        "Dev Tools",
+                        "API REST",
+                        "Design Tools"
+                ]},
+                "aboutme": {},
+                "hobbies": {},
+                "projects": {
+                    "content": [{
+                            "h3": "Space Invader",
+                            "picture": "../assets/spaceInvader.resized.png",
+                            "description": "I had created a Space Invader game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
+                            "link": "https://josue-ferreira.github.io/galaxia/"
+                        },
+                        {
+                            "h3": "Cookie Clicker",
+                            "picture": "../assets/cookieClicker.resized.png",
+                            "description": "With Stéphanie Gentil, we had created a Cookie Clicker game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
+                            "link": "https://josue-ferreira.github.io/cookies-clicker/"
+                        }],
+                    "linkText": "Try it !"
+                },
+                "contactme": {
+                    "title": "Contact Details",
+                    "linkedIn": "Send me a message on LinkedIn",
+                    "mail": "Send me an email"
+                }
+            }
+        },
+    "fr": {
+            "pages":{
+                "home": 
+                {
+                    "h1": "Salut ! Je suis ",
+                    "h2": "Développeur Web React",
+                    "cv": "Télécharger mon CV",
+                    "skillsTitle": [
+                        "Compétences en programmation",
+                        "Outils de développement",
+                        "API REST",
+                        "Outils de conception UI"
+                ]},
+                "aboutme": {},
+                "hobbies": {},
+                "projects": {
+                    "content": [{
+                        "h3": "Space Invader",
+                        "picture": "../assets/spaceInvader.resized.png",
+                        "description": "J'ai créé un jeu Space Invader en <em style='color: #F1DB66'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
+                        "link": "https://josue-ferreira.github.io/galaxia/"
+                    },
+                    {
+                        "h3": "Cookie Clicker",
+                        "picture": "../assets/cookieClicker.resized.png",
+                        "description": "En collaboration avec Stéphanie Gentil, nous avons créé un jeu Cookie Clicker en <em style='color: #F1DB66'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
+                        "link": "https://josue-ferreira.github.io/cookies-clicker/"
+                    }],
+                    "linkText": "Essayez-le !"
+                },
+                "contactme": {
+                    "title": "Mes coordonnées",
+                    "linkedIn": "Envoyez-moi un message sur LinkedIn",
+                    "mail": "Envoyez-moi un email"
+                }
+            }
+        }
+}
