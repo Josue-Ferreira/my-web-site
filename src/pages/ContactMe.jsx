@@ -64,7 +64,7 @@ const ContactMe = () => {
                 <Button href="tel:+33663853984"><BsTelephoneFill /></Button>
                 <div>+33 6 63 85 39 84</div>
                 <Button href="https://www.linkedin.com/in/josué-ferreira-694095276" target="_blank">
-                    <ImgLink src='../../public/assets/logos/linkedin.png' alt="LinkedIn link" title='Link to LinkedIn' />
+                    <ImgLink src='../../public/logos/linkedin.png' alt="LinkedIn link" title='Link to LinkedIn' />
                 </Button>
                 <div>{textLang[language].pages.contactme.linkedIn}</div>
                 <Button href="mailto:ferreira.josu@gmail.com"><MdEmail/></Button>
