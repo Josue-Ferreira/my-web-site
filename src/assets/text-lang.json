@@ -27,7 +27,11 @@
                         }],
                     "linkText": "Try it !"
                 },
-                "contactme": {}
+                "contactme": {
+                    "title": "Contact Details",
+                    "linkedIn": "Send me a message on LinkedIn",
+                    "mail": "Send me an email"
+                }
             }
         },
     "fr": {
@@ -60,7 +64,11 @@
                     }],
                     "linkText": "Essayez-le !"
                 },
-                "contactme": {}
+                "contactme": {
+                    "title": "Mes coordonnées",
+                    "linkedIn": "Envoyez-moi un message sur LinkedIn",
+                    "mail": "Envoyez-moi un email"
+                }
             }
         }
 }
