@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import spaceInvader from '../assets/spaceInvader.resized.png'
 import cookieClicker from '../assets/cookieClicker.resized.png'
 import Navigation from '../components/Navigation';
@@ -42,7 +43,8 @@ const Button = styled.a`
 `;
 
 const Games = () => {
-    const [language, setLanguage] = useState('en');
+    const {page, lang} = useParams();
+    const [language, setLanguage] = useState(lang ? lang : 'en');
 
     return (
         <Section>

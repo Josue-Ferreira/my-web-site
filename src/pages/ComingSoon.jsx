@@ -4,8 +4,8 @@ import Navigation from '../components/Navigation';
 import { useParams } from 'react-router-dom';
 
 const ComingSoon = () => {
-    const [language, setLanguage] = useState('en');
-    const {page} = useParams();
+    const {page, lang} = useParams();
+    const [language, setLanguage] = useState(lang ? lang : 'en');
 
     return (
         <>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import Navigation from '../components/Navigation';
 import linkedin from '../assets/logos/linkedin.png';
@@ -40,7 +41,8 @@ const Button = styled.a`
 `;
 
 const ContactMe = () => {
-    const [language, setLanguage] = useState('en');
+    const {page, lang} = useParams();
+    const [language, setLanguage] = useState(lang ? lang : 'en');
 
     return (
         <Section>
