@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillCard from './SkillCard';
-// import { Container, Row, Col } from 'reactstrap';
-import dataSkills from '../assets/dataSkills.js';
+import dataSkills from '../../public/assets/dataSkills.js';
 import textLang from '../assets/text-lang.json';
 
 const SkillContainer = styled.div`
@@ -47,49 +46,33 @@ const SkillsSection = ({language}) => {
             <SkillContainer>
                 <Title>{textLang[language].pages.home.skillsTitle[0]}</Title>
                 <Container>
-                    {/* <Row xs="3"> */}
                         {dataSkills.filter(skill => skill.category === 'programming').map((skill) => (
-                            // <Col key={skill.name} style={{margin: '10px 0'}}>
-                                <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
-                            // </Col>
+                            <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
                         ))}
-                    {/* </Row> */}
                 </Container>
             </SkillContainer>
             <SkillContainer>
                 <Title>{textLang[language].pages.home.skillsTitle[1]}</Title>
                 <Container>
-                    {/* <Row xs="3"> */}
                         {dataSkills.filter(skill => skill.category === 'softwares').map((skill) => (
-                            // <Col key={skill.name} style={{margin: '10px 0'}}>
-                                <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
-                            // </Col>
+                            <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
                         ))}
-                    {/* </Row> */}
                 </Container>
             </SkillContainer>
             <SkillContainer>
                 <Title>{textLang[language].pages.home.skillsTitle[2]}</Title>
                 <Container style={{gridTemplateRows: '1fr'}}>
-                    {/* <Row xs="3"> */}
                         {dataSkills.filter(skill => skill.category === 'api').map((skill) => (
-                            // <Col key={skill.name} style={{margin: '10px 0'}}>
-                                <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
-                            // </Col>
+                            <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
                         ))}
-                    {/* </Row> */}
                 </Container>
             </SkillContainer>
             <SkillContainer>
                 <Title>{textLang[language].pages.home.skillsTitle[3]}</Title>
                 <Container style={{gridTemplateRows: '1fr'}}>
-                    {/* <Row xs="3"> */}
                         {dataSkills.filter(skill => skill.category === 'design').map((skill) => (
-                            // <Col key={skill.name} style={{margin: '10px 0'}}>
-                                <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
-                            // </Col>
+                            <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
                         ))}
-                    {/* </Row> */}
                 </Container>
             </SkillContainer>
         </div>

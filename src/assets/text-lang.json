@@ -17,13 +17,13 @@
                 "projects": {
                     "content": [{
                             "h3": "Space Invader",
-                            "picture": "../assets/spaceInvader.resized.png",
+                            "picture": "../../public/assets/spaceInvader.resized.png",
                             "description": "I had created a Space Invader game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
                             "link": "https://josue-ferreira.github.io/galaxia/"
                         },
                         {
                             "h3": "Cookie Clicker",
-                            "picture": "../assets/cookieClicker.resized.png",
+                            "picture": "../../public/assets/cookieClicker.resized.png",
                             "description": "With Stéphanie Gentil, we had created a Cookie Clicker game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
                             "link": "https://josue-ferreira.github.io/cookies-clicker/"
                         }],
@@ -54,13 +54,13 @@
                 "projects": {
                     "content": [{
                         "h3": "Space Invader",
-                        "picture": "../assets/spaceInvader.resized.png",
+                        "picture": "../../public/assets/spaceInvader.resized.png",
                         "description": "J'ai créé un jeu Space Invader en <em style='color: #F1DB66'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
                         "link": "https://josue-ferreira.github.io/galaxia/"
                     },
                     {
                         "h3": "Cookie Clicker",
-                        "picture": "../assets/cookieClicker.resized.png",
+                        "picture": "../../public/assets/cookieClicker.resized.png",
                         "description": "En collaboration avec Stéphanie Gentil, nous avons créé un jeu Cookie Clicker en <em style='color: #F1DB66'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
                         "link": "https://josue-ferreira.github.io/cookies-clicker/"
                     }],

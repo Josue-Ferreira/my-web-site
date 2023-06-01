@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import parse from 'html-react-parser';
@@ -45,28 +45,15 @@ const Button = styled.a`
 const Games = () => {
     const {lang} = useParams();
     const [language, setLanguage] = useState(lang ? lang : 'en');
-    const [picturePaths, setPicturePaths] = useState([]);
-
-    useEffect(() => {
-        const fecthImage = async(path) => {
-            const pictureImport = await import(path);
-            setPicturePaths(previous => 
-                previous.some(element => element == pictureImport.default) ? 
-                [...previous] : [...previous,pictureImport.default]);
-        }
-        textLang[language].pages.projects.content.forEach(project => {
-            fecthImage(project.picture);
-        });
-    },[]);
    
     return (
         <Section>
             <Navigation page={'projects'} language={language} setLanguage={setLanguage} />
             <GameContainer>
                 {
-                    textLang[language].pages.projects.content.map((element, i) => (
+                    textLang[language].pages.projects.content.map(element => (
                         <>
-                            <img src={picturePaths[i]} alt={element.h3} />
+                            <img src={element.picture} alt={element.h3} />
                             <div style={{width: '70%'}}>
                                 <h3 style={{color: '#F1DB66'}}>{element.h3}</h3>
                                 <p>{parse(element.description)}</p>
