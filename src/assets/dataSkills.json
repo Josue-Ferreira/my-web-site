@@ -1,0 +1,72 @@
+[
+    {
+        "name": "CSS3 / HTML5",
+        "category": "programming",
+        "picture": "/logos/css3-html5.png"
+    },
+    {
+        "name": "JavaScript",
+        "category": "programming",
+        "picture": "/logos/js.png"
+    },
+    {
+        "name": "React & ReactStrap",
+        "category": "programming",
+        "picture": "/logos/react.svg"
+    },
+    {
+        "name": "Express for Node.js",
+        "category": "programming",
+        "picture": "/logos/express.png"
+    },
+    {
+        "name": "MySQL",
+        "category": "programming",
+        "picture": "/logos/mysql.png"
+    },
+    {
+        "name": "Git / GitHub",
+        "category": "softwares",
+        "picture": "/logos/git.png"
+    },
+    {
+        "name": "Visual Studio Code",
+        "category": "softwares",
+        "picture": "/logos/vscode.png"
+    },
+    {
+        "name": "Linux CLI",
+        "category": "softwares",
+        "picture": "/logos/linux.png"
+    },
+    {
+        "name": "Node.js",
+        "category": "softwares",
+        "picture": "/logos/nodejs.png"
+    },
+    {
+        "name": "NPM",
+        "category": "softwares",
+        "picture": "/logos/npm.png"
+    },
+    {
+        "name": "ViteJS",
+        "category": "softwares",
+        "picture": "/logos/vite.svg"
+    },
+    {
+        "name": "Figma",
+        "category": "design",
+        "picture": "/logos/figma.png"
+    },
+    {
+        "name": "MapBox",
+        "category": "api",
+        "picture": "/logos/mapbox.png"
+    },
+    {
+        "name": "Opendatasoft",
+        "category": "api",
+        "picture": "/logos/opendatasoft.png"
+    }
+]
