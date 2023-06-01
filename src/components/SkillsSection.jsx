@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SkillCard from './SkillCard';
-import dataSkills from '../../public/dataSkills.js';
+import dataSkills from '../assets/dataSkills.json';
 import textLang from '../assets/text-lang.json';
 
 const SkillContainer = styled.div`
