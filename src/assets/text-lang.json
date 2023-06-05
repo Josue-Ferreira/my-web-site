@@ -6,6 +6,7 @@
                     "h1": "Hi ! I'm ",
                     "h2": "React Web Developper",
                     "cv": "Download CV",
+                    "cvfile": "/CV_en.pdf",
                     "skillsTitle": [
                         "Programming skills",
                         "Dev Tools",
@@ -43,6 +44,7 @@
                     "h1": "Salut ! Je suis ",
                     "h2": "Développeur Web React",
                     "cv": "Télécharger mon CV",
+                    "cvfile": "/CV.pdf",
                     "skillsTitle": [
                         "Compétences en programmation",
                         "Outils de développement",
