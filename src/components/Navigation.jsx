@@ -52,29 +52,32 @@ const Navigation = ({page, language, setLanguage}) => {
                 <Nav pills navbar >
                     <NavItem>
                         <NavLink 
-                            href="#" 
+                            tag={Link}
+                            to={`/${language}`}
                             className={page === 'home' ? 'active' : ''} 
                             style={page === 'home' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                             >
-                                <Link to={`/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "HOME" : "ACCUEIL"}</Link>
+                                {language === 'en' ? "HOME" : "ACCUEIL"}
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href="#" 
+                            tag={Link} 
+                            to={`/coming-soon/aboutme/${language}`}
                             className={page === 'aboutme' ? 'active' : ''} 
                             style={page === 'aboutme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                             >
-                                <Link to={`/coming-soon/aboutme/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "ABOUT ME" : "PRESENTATION"}</Link>
+                                {language === 'en' ? "ABOUT ME" : "PRESENTATION"}
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href="#" 
+                            tag={Link}
+                            to={`/coming-soon/hobbies/${language}`}
                             className={page === 'hobbies' ? 'active' : ''} 
                             style={page === 'hobbies' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                             >
-                                <Link to={`/coming-soon/hobbies/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "HOBBIES" : "LOISIRS"}</Link>
+                                {language === 'en' ? "HOBBIES" : "LOISIRS"}
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -88,11 +91,12 @@ const Navigation = ({page, language, setLanguage}) => {
                     </NavItem>
                     <NavItem>
                         <NavLink 
-                            href="#" 
+                            tag={Link} 
+                            to={`/contact-me/${language}`}
                             className={page === 'contactme' ? 'active' : ''} 
                             style={page === 'contactme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
                             >
-                                <Link to={`/contact-me/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}</Link>
+                                {language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}
                         </NavLink>
                     </NavItem>
                     <NavItem className='display-language' style={language === 'en' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('en')}>EN</NavItem>
