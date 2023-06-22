@@ -33,7 +33,7 @@ const Button = styled.button`
   border-radius: 40px;
   padding: 5px;
   margin: 0 5px;
-  color: #F1DB66;
+  color: var(--secondary-color);
   transition: border 0.1s linear;
 `;
 
@@ -55,7 +55,7 @@ const Navigation = ({page, language, setLanguage}) => {
                             tag={Link}
                             to={`/${language}`}
                             className={page === 'home' ? 'active' : ''} 
-                            style={page === 'home' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                            style={page === 'home' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
                             >
                                 {language === 'en' ? "HOME" : "ACCUEIL"}
                         </NavLink>
@@ -65,7 +65,7 @@ const Navigation = ({page, language, setLanguage}) => {
                             tag={Link} 
                             to={`/coming-soon/aboutme/${language}`}
                             className={page === 'aboutme' ? 'active' : ''} 
-                            style={page === 'aboutme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                            style={page === 'aboutme' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
                             >
                                 {language === 'en' ? "ABOUT ME" : "PRESENTATION"}
                         </NavLink>
@@ -75,7 +75,7 @@ const Navigation = ({page, language, setLanguage}) => {
                             tag={Link}
                             to={`/coming-soon/hobbies/${language}`}
                             className={page === 'hobbies' ? 'active' : ''} 
-                            style={page === 'hobbies' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                            style={page === 'hobbies' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
                             >
                                 {language === 'en' ? "HOBBIES" : "LOISIRS"}
                         </NavLink>
@@ -84,7 +84,7 @@ const Navigation = ({page, language, setLanguage}) => {
                         <NavLink 
                             href="#" 
                             className={page === 'projects' ? 'active' : ''} 
-                            style={page === 'projects' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                            style={page === 'projects' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
                             >
                                 <Link to={`/projects/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "PROJECTS" : "PROJETS"}</Link>
                         </NavLink>
@@ -94,13 +94,13 @@ const Navigation = ({page, language, setLanguage}) => {
                             tag={Link} 
                             to={`/contact-me/${language}`}
                             className={page === 'contactme' ? 'active' : ''} 
-                            style={page === 'contactme' ? {backgroundColor: '#F1DB66'} : {color: '#bdc3c7'}}
+                            style={page === 'contactme' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
                             >
                                 {language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}
                         </NavLink>
                     </NavItem>
-                    <NavItem className='display-language' style={language === 'en' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('en')}>EN</NavItem>
-                    <NavItem className='display-language' style={language === 'fr' ? {backgroundColor: '#F1DB66', borderRadius: '0.375rem'} : {color: '#bdc3c7'}} onClick={() => setLanguage('fr')}>FR</NavItem>
+                    <NavItem className='display-language' style={language === 'en' ? {backgroundColor: 'var(--secondary-color)', color: 'white', borderRadius: '0.375rem'} : {}} onClick={() => setLanguage('en')}>EN</NavItem>
+                    <NavItem className='display-language' style={language === 'fr' ? {backgroundColor: 'var(--secondary-color)', color: 'white', borderRadius: '0.375rem'} : {}} onClick={() => setLanguage('fr')}>FR</NavItem>
                 </Nav>
             </Collapse>
             <Container>

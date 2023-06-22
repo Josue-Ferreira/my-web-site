@@ -13,6 +13,9 @@ const SkillContainer = styled.div`
     @media screen and (max-width: 768px){
         flex-direction: column;
     }
+    @media screen and (min-width: 1480px){
+        width: 60%;
+    }
 `;
 
 const Title = styled.h3`

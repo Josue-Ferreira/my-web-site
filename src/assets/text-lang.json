@@ -19,13 +19,13 @@
                     "content": [{
                             "h3": "Space Invader",
                             "picture": "/spaceInvader.resized.png",
-                            "description": "I had created a Space Invader game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
+                            "description": "I had created a Space Invader game with <em style='color: var(--secondary-color)'>JavaScript Vanilla</em> to work in desktop web browsers",
                             "link": "https://josue-ferreira.github.io/galaxia/"
                         },
                         {
                             "h3": "Cookie Clicker",
                             "picture": "/cookieClicker.resized.png",
-                            "description": "With Stéphanie Gentil, we had created a Cookie Clicker game with <em style='color: #F1DB66'>JavaScript Vanilla</em> to work in desktop web browsers",
+                            "description": "With Stéphanie Gentil, we had created a Cookie Clicker game with <em style='color: var(--secondary-color)'>JavaScript Vanilla</em> to work in desktop web browsers",
                             "link": "https://josue-ferreira.github.io/cookies-clicker/"
                         }],
                     "linkText": "Try it !"

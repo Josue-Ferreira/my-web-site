@@ -8,7 +8,7 @@ const Section = styled.section`
   background: linear-gradient(
     to top,
     rgba(189, 195, 199, 0),
-    #2c3e50
+    var(--primary-color)
   ); //#bdc3c7
   display: flex;
   flex-direction: column;
@@ -30,13 +30,13 @@ const Welcome = styled.div`
 `;
 
 const Button = styled.a`
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  background-color: #f1db66;
+  background-color: var(--secondary-color);
   border-radius: 40px;
   padding: 5px 5vw;
   margin: 5vh 0;
-  color: #2c3e50;
+  color: white;//#2c3e50;
 `;
 
 const ImgPhotoProfil = styled.img`
@@ -49,7 +49,7 @@ const ImgPhotoProfil = styled.img`
 `;
 
 const Name = styled.strong`
-  color: #f1db66;
+  color: var(--secondary-color);
 `;
 
 const Links = styled.div`
@@ -68,6 +68,19 @@ const Hello = styled.div`
   @media screen and (max-width: 400px) {
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const ImgReact = styled.img`
+  display: inline;
+  margin-right: 20px;
+  width: 5rem;
+  @media screen and (max-width: 400px) {
+    display: block;
+    margin: 10px;
   }
 `;
 
@@ -81,7 +94,8 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.h1}
             <Name>Josué Ferreira</Name>
           </h1>
-          <h2>{textLang[language].pages.home.h2}</h2>
+          <ImgReact src="/logos/react2.svg" alt="react logo" />
+          <h2 style={{display: 'inline'}} >{textLang[language].pages.home.h2}</h2>
           <Button href={textLang[language].pages.home.cvfile} download>
             {textLang[language].pages.home.cv}
           </Button>

@@ -10,9 +10,14 @@
         "picture": "/logos/js.png"
     },
     {
-        "name": "React & ReactStrap",
+        "name": "React",
         "category": "programming",
         "picture": "/logos/react.svg"
+    },
+    {
+        "name": "Redux",
+        "category": "programming",
+        "picture": "/logos/redux.svg"
     },
     {
         "name": "Express for Node.js",

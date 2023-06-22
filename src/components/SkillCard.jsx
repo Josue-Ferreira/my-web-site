@@ -12,7 +12,7 @@ const SkillCard = ({cardTitle,cardPicture}) => {
         <Card
             className="text-center"
             style={{
-                // width: '18rem',
+                maxWidth: '250px',
                 borderRadius: '40px',
                 boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.24)'
             }}

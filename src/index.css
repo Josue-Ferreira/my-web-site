@@ -1,5 +1,18 @@
 :root{
   font-family: 'Ubuntu', sans-serif;
+  --primary-color: #f1db66;
+  --secondary-color: #8F3949;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }
 
 body {

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import textLang from '../assets/text-lang.json';
 
 const Section = styled.section`
-  background: linear-gradient(to top, rgba(189,195,199,0.5), #2c3e50); //#bdc3c7
+  background: linear-gradient(to top, rgba(189,195,199,0.5), var(--primary-color)); //#bdc3c7
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -31,11 +31,11 @@ const GameContainer = styled.div`
 const Button = styled.a`
   display: inline-block;
   text-decoration: none;
-  background-color: #F1DB66;
+  background-color: var(--secondary-color);
   border-radius: 40px;
   padding: 5px 5vw;
   margin: 1vh 0;
-  color: #2C3E50;
+  color: white;
 
   @media screen and (max-width: 767px) {
         display: none;
@@ -55,7 +55,7 @@ const Games = () => {
                         <>
                             <img src={element.picture} alt={element.h3} />
                             <div style={{width: '70%'}}>
-                                <h3 style={{color: '#F1DB66'}}>{element.h3}</h3>
+                                <h3 style={{color: 'var(--secondary-color)'}}>{element.h3}</h3>
                                 <p>{parse(element.description)}</p>
                                 <Button href={element.link} target='_blank'>{textLang[language].pages.projects.linkText}</Button>
                             </div>
