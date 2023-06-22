@@ -1,5 +1,32 @@
 {
     "en": {
+            "nav":[
+                {
+                    "content": "HOME",
+                    "name": "home",
+                    "link": "/"
+                },
+                {
+                    "content": "ABOUT ME",
+                    "name": "aboutme",
+                    "link": "/coming-soon/aboutme/"
+                },
+                {
+                    "content": "HOBBIES",
+                    "name": "hobbies",
+                    "link": "/coming-soon/hobbies/"
+                },
+                {
+                    "content": "PROJECTS",
+                    "name": "projects",
+                    "link": "/projects/"
+                },
+                {
+                    "content": "CONTACT ME",
+                    "name": "contactme",
+                    "link": "/contact-me/"
+                }
+            ],
             "pages":{
                 "home": 
                 {
@@ -38,6 +65,33 @@
             }
         },
     "fr": {
+            "nav":[
+                {
+                    "content": "ACCUEIL",
+                    "name": "home",
+                    "link": "/"
+                },
+                {
+                    "content": "PRESENTATION",
+                    "name": "aboutme",
+                    "link": "/coming-soon/aboutme/"
+                },
+                {
+                    "content": "LOISIRS",
+                    "name": "hobbies",
+                    "link": "/coming-soon/hobbies/"
+                },
+                {
+                    "content": "PROJETS",
+                    "name": "projects",
+                    "link": "/projects/"
+                },
+                {
+                    "content": "CONTACTEZ MOI",
+                    "name": "contactme",
+                    "link": "/contact-me/"
+                }
+            ],
             "pages":{
                 "home": 
                 {

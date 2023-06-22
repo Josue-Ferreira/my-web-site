@@ -11,6 +11,7 @@ import {
     NavLink
   } from 'reactstrap';
 import styled from 'styled-components';
+import textLang from '../assets/text-lang.json';
 
 const Img = styled.img`
     height: 10vh;
@@ -50,55 +51,20 @@ const Navigation = ({page, language, setLanguage}) => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar style={{justifyContent: 'center'}}>
                 <Nav pills navbar >
-                    <NavItem>
-                        <NavLink 
-                            tag={Link}
-                            to={`/${language}`}
-                            className={page === 'home' ? 'active' : ''} 
-                            style={page === 'home' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
-                            >
-                                {language === 'en' ? "HOME" : "ACCUEIL"}
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            tag={Link} 
-                            to={`/coming-soon/aboutme/${language}`}
-                            className={page === 'aboutme' ? 'active' : ''} 
-                            style={page === 'aboutme' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
-                            >
-                                {language === 'en' ? "ABOUT ME" : "PRESENTATION"}
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            tag={Link}
-                            to={`/coming-soon/hobbies/${language}`}
-                            className={page === 'hobbies' ? 'active' : ''} 
-                            style={page === 'hobbies' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
-                            >
-                                {language === 'en' ? "HOBBIES" : "LOISIRS"}
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            href="#" 
-                            className={page === 'projects' ? 'active' : ''} 
-                            style={page === 'projects' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
-                            >
-                                <Link to={`/projects/${language}`} style={{textDecoration: 'none', color: 'inherit'}}>{language === 'en' ? "PROJECTS" : "PROJETS"}</Link>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink 
-                            tag={Link} 
-                            to={`/contact-me/${language}`}
-                            className={page === 'contactme' ? 'active' : ''} 
-                            style={page === 'contactme' ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
-                            >
-                                {language === 'en' ? "CONTACT ME" : "CONTACTEZ MOI"}
-                        </NavLink>
-                    </NavItem>
+                    {
+                        textLang[language].nav.map(navtab => (
+                            <NavItem key={navtab.name} >
+                                <NavLink 
+                                    tag={Link}
+                                    to={navtab.link+language}
+                                    className={page === navtab.name ? 'active' : ''} 
+                                    style={page === navtab.name ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
+                                    >
+                                        {navtab.content}
+                                </NavLink>
+                            </NavItem>
+                        ))
+                    }
                     <NavItem className='display-language' style={language === 'en' ? {backgroundColor: 'var(--secondary-color)', color: 'white', borderRadius: '0.375rem'} : {}} onClick={() => setLanguage('en')}>EN</NavItem>
                     <NavItem className='display-language' style={language === 'fr' ? {backgroundColor: 'var(--secondary-color)', color: 'white', borderRadius: '0.375rem'} : {}} onClick={() => setLanguage('fr')}>FR</NavItem>
                 </Nav>
