@@ -90,8 +90,22 @@ img {
   display: none;
 }
 
+.custom-tag{
+  height: 500px;
+}
+
+@media screen and (max-width: 768px){
+  .custom-tag{
+    height: 800px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .display-language {
       display: block;
   }
 }
+
+/* #skills .carousel-caption {
+  position: static;
+} */
