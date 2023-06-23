@@ -4,6 +4,11 @@ import SkillCard from './SkillCard';
 import dataSkills from '../assets/dataSkills.json';
 import textLang from '../assets/text-lang.json';
 
+const Skills = styled.div`
+    background: radial-gradient(ellipse at right bottom, #8F3949, #C33764, #240b36, #121212);
+    padding: 50px 0;
+`;
+
 const SkillContainer = styled.div`
     margin: 5vh auto;
     width: 95%;
@@ -45,9 +50,9 @@ const Container = styled.div`
 
 const SkillsSection = ({language}) => {
     return (
-        <div>
+        <Skills>
             <SkillContainer>
-                <Title>{textLang[language].pages.home.skillsTitle[0]}</Title>
+                <Title className='text-light'>{textLang[language].pages.home.skillsTitle[0]}</Title>
                 <Container>
                         {dataSkills.filter(skill => skill.category === 'programming').map((skill) => (
                             <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
@@ -55,7 +60,7 @@ const SkillsSection = ({language}) => {
                 </Container>
             </SkillContainer>
             <SkillContainer>
-                <Title>{textLang[language].pages.home.skillsTitle[1]}</Title>
+                <Title className='text-light'>{textLang[language].pages.home.skillsTitle[1]}</Title>
                 <Container>
                         {dataSkills.filter(skill => skill.category === 'softwares').map((skill) => (
                             <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
@@ -63,7 +68,7 @@ const SkillsSection = ({language}) => {
                 </Container>
             </SkillContainer>
             <SkillContainer>
-                <Title>{textLang[language].pages.home.skillsTitle[2]}</Title>
+                <Title className='text-light'>{textLang[language].pages.home.skillsTitle[2]}</Title>
                 <Container style={{gridTemplateRows: '1fr'}}>
                         {dataSkills.filter(skill => skill.category === 'api').map((skill) => (
                             <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
@@ -71,14 +76,14 @@ const SkillsSection = ({language}) => {
                 </Container>
             </SkillContainer>
             <SkillContainer>
-                <Title>{textLang[language].pages.home.skillsTitle[3]}</Title>
+                <Title className='text-light'>{textLang[language].pages.home.skillsTitle[3]}</Title>
                 <Container style={{gridTemplateRows: '1fr'}}>
                         {dataSkills.filter(skill => skill.category === 'design').map((skill) => (
                             <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
                         ))}
                 </Container>
             </SkillContainer>
-        </div>
+        </Skills>
     );
 };
 
