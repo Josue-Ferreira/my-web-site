@@ -21,7 +21,7 @@ const Section = styled.section`
 
 const Welcome = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -108,6 +108,7 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.cv}
           </Button>
         </Hello>
+        <img src="/spaceship.svg" style={{alignSelf: 'end'}} />
         <ImgPhotoProfil
           id="photo-profil"
           src="photo_profil.resized.png"
