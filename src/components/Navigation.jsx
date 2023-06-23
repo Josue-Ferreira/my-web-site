@@ -49,7 +49,7 @@ const Navigation = ({page, language, setLanguage}) => {
             </NavbarBrand>
             <NavbarToggler className='navbar-dark' onClick={toggle} />
             <Collapse isOpen={isOpen} navbar style={{justifyContent: 'center'}}>
-                <Nav pills navbar >
+                <Nav navbar >
                     {
                         textLang[language].nav.map(navtab => (
                             <NavItem key={navtab.name} >
@@ -57,7 +57,7 @@ const Navigation = ({page, language, setLanguage}) => {
                                     tag={Link}
                                     to={navtab.link+language}
                                     className={page === navtab.name ? 'active text-light' : 'text-light'} 
-                                    style={page === navtab.name ? {backgroundColor: 'var(--secondary-color)'} : {}}
+                                    style={page === navtab.name ? {fontWeight: 'bold'} : {opacity: '0.5'}}
                                     >
                                         {navtab.content}
                                 </NavLink>
