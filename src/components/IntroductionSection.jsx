@@ -78,6 +78,14 @@ const Hello = styled.div`
   }
 `;
 
+const ImgSpaceship = styled.img`
+  align-self: end;
+  
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+`;
+
 const IntroductionSection = ({ page, language, setLanguage }) => {
   useEffect(() => {
     const typewriter = new Typewriter('#job-resume',{
@@ -108,7 +116,7 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.cv}
           </Button>
         </Hello>
-        <img src="/spaceship.svg" style={{alignSelf: 'end'}} />
+        <ImgSpaceship src="/spaceship.svg" />
         <ImgPhotoProfil
           id="photo-profil"
           src="photo_profil.resized.png"
