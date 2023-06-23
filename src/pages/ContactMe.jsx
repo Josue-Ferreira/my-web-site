@@ -8,18 +8,29 @@ import {MdEmail} from 'react-icons/md'
 import textLang from '../assets/text-lang.json';
 
 const Section = styled.section`
-  background: linear-gradient(to top, rgba(189,195,199,0), var(--primary-color)); //#bdc3c7
+  background-image: url('/imageback.png');
+  background-position: top center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
 `;
 
+const ContainerCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
+`;
+
 const Contact = styled.div`
-    height: 70vh;
-    width: 30vw;
-    margin: 0 auto;
     display: grid;
-    grid-template: repeat(4, 100px)/repeat(2, 1fr);
+    grid-template: repeat(3, 100px)/repeat(2, 1fr);
     align-items: center;
 `;
 
@@ -59,17 +70,19 @@ const ContactMe = () => {
     return (
         <Section>
             <Navigation page={'contactme'} language={language} setLanguage={setLanguage} />
-            <Contact>
-                <Title>{textLang[language].pages.contactme.title}</Title>
-                <Button href="tel:+33663853984"><BsTelephoneFill /></Button>
-                <div>+33 6 63 85 39 84</div>
-                <Button href="https://www.linkedin.com/in/josué-ferreira-694095276" target="_blank">
-                    <BsLinkedin />
-                </Button>
-                <div>{textLang[language].pages.contactme.linkedIn}</div>
-                <Button href="mailto:ferreira.josu@gmail.com"><MdEmail/></Button>
-                <div>{textLang[language].pages.contactme.mail}</div>
-            </Contact>
+            <ContainerCenter>
+              <Title>{textLang[language].pages.contactme.title}</Title>
+              <Contact className='text-light'>
+                  <Button href="tel:+33663853984"><BsTelephoneFill /></Button>
+                  <div>+33 6 63 85 39 84</div>
+                  <Button href="https://www.linkedin.com/in/josué-ferreira-694095276" target="_blank">
+                      <BsLinkedin />
+                  </Button>
+                  <div>{textLang[language].pages.contactme.linkedIn}</div>
+                  <Button href="mailto:ferreira.josu@gmail.com"><MdEmail/></Button>
+                  <div>{textLang[language].pages.contactme.mail}</div>
+              </Contact>
+            </ContainerCenter>
         </Section>
     );
 };

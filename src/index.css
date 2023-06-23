@@ -15,13 +15,22 @@
   background: grey;
 }
 
-body {
-  color: #2C3E50;
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+.img-react{
+  display: inline;
+  margin-right: 10px;
+  width: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+  .img-react{
+    display: block;
+    margin: 10px;
+  }
 }
 
 @keyframes arrowDown {
