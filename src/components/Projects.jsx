@@ -15,6 +15,7 @@ const Section = styled.div`
     margin-top: -50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;

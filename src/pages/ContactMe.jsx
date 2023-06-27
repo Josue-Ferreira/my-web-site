@@ -56,7 +56,6 @@ const Button = styled.a`
   margin: 20px;
   justify-content: center;
   align-items: center;
-  /* margin: 5vh 0; */
   color: white;
   &:hover{
     color: inherit; 
