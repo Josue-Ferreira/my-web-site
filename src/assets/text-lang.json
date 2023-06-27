@@ -57,6 +57,12 @@
                             "picture": "/cookieClicker.resized.png",
                             "description": "With Stéphanie Gentil, we had created a Cookie Clicker game with <em style='color: var(--secondary-color)'>JavaScript Vanilla</em> to work in desktop web browsers",
                             "link": "https://josue-ferreira.github.io/cookies-clicker/"
+                        },
+                        {
+                            "h3": "Shop with React",
+                            "picture": "/shop-react.resized.png",
+                            "description": "Front-end website made with <em style='color: var(--secondary-color)'>REACT</em> and back-end with <em style='color: var(--secondary-color)'>Express Node.js</em>. Website fecthes an API faker to get clothes. Users can sign up and save cart on localstorage and cloud. Database in <em style='color: var(--secondary-color)'>MySQL</em> (Back-end not deployed yet).",
+                            "link": "https://shop-jf-react.netlify.app/"
                         }],
                     "linkText": "Try it !"
                 },
@@ -125,6 +131,12 @@
                         "picture": "/cookieClicker.resized.png",
                         "description": "En collaboration avec Stéphanie Gentil, nous avons créé un jeu Cookie Clicker en <em style='color: #F1DB66'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
                         "link": "https://josue-ferreira.github.io/cookies-clicker/"
+                    },
+                    {
+                        "h3": "Shop with React",
+                        "picture": "/shop-react.resized.png",
+                        "description": "La partie front-end du site développée avec <em style='color: var(--secondary-color)'>REACT</em> et le back-end avec <em style='color: var(--secondary-color)'>Express Node.js</em>. Les produits sont récupérés depuis une API externe (faker). Un utilisateur peut s'inscrire et sauvegarder son panier localement et sur le serveur.<em style='color: var(--secondary-color)'>MySQL</em> a été utilisé pour la base de données (le back-end non déployé pour le moment).",
+                        "link": "https://shop-jf-react.netlify.app/"
                     }],
                     "linkText": "Essayez-le !"
                 },
