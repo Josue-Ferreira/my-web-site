@@ -23,7 +23,8 @@ const Button = styled.a`
 
 const Title = styled.h3`
     color: var(--secondary-color);
-    /* text-align: center; */
+    padding: 20px;
+    text-align: center;
 `;
 
 const Container = styled.div`
@@ -34,6 +35,10 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 426px) {
+        flex-direction: column;
+    }
 `;
 
 const Contact = ({language}) => {
