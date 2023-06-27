@@ -73,7 +73,7 @@ const SkillsCarousel = ({language}) => {
                 className='skills-carousel'
                 >
                 <CarouselIndicators
-                    items={[0,1,2]}
+                    items={[0,1,2,3]}
                     activeIndex={activeIndex}
                     onClickHandler={goToIndex}
                 />
