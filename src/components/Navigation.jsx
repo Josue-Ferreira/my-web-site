@@ -34,7 +34,6 @@ const Button = styled.button`
   border-radius: 40px;
   padding: 5px;
   margin: 0 5px;
-  color: var(--secondary-color);
   transition: border 0.1s linear;
 `;
 
@@ -44,21 +43,21 @@ const Navigation = ({page, language, setLanguage}) => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar expand={'md'}  >
+        <Navbar expand={'md'} >
             <NavbarBrand href="/">
                 <Img src='/logos/mylogo.svg' alt="logo-josué-ferreira" />
             </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
+            <NavbarToggler className='navbar-dark' onClick={toggle} />
             <Collapse isOpen={isOpen} navbar style={{justifyContent: 'center'}}>
-                <Nav pills navbar >
+                <Nav navbar >
                     {
                         textLang[language].nav.map(navtab => (
                             <NavItem key={navtab.name} >
                                 <NavLink 
                                     tag={Link}
                                     to={navtab.link+language}
-                                    className={page === navtab.name ? 'active' : ''} 
-                                    style={page === navtab.name ? {backgroundColor: 'var(--secondary-color)', color: 'white'} : {}}
+                                    className={page === navtab.name ? 'active text-light' : 'text-light'} 
+                                    style={page === navtab.name ? {fontWeight: 'bold'} : {opacity: '0.5'}}
                                     >
                                         {navtab.content}
                                 </NavLink>
@@ -70,8 +69,8 @@ const Navigation = ({page, language, setLanguage}) => {
                 </Nav>
             </Collapse>
             <Container>
-                <Button style={language === 'en' ? {border: 'solid'} : {border: 'none'}} onClick={() => setLanguage('en')}>EN</Button>
-                <Button style={language === 'fr' ? {border: 'solid'} : {border: 'none'}} onClick={() => setLanguage('fr')}>FR</Button>
+                <Button className='text-light' style={language === 'en' ? {border: 'solid'} : {border: 'none'}} onClick={() => setLanguage('en')}>EN</Button>
+                <Button className='text-light' style={language === 'fr' ? {border: 'solid'} : {border: 'none'}} onClick={() => setLanguage('fr')}>FR</Button>
             </Container>
         </Navbar>
     );

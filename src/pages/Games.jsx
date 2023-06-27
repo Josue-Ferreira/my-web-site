@@ -7,7 +7,9 @@ import styled from 'styled-components';
 import textLang from '../assets/text-lang.json';
 
 const Section = styled.section`
-  background: linear-gradient(to top, rgba(189,195,199,0.5), var(--primary-color)); //#bdc3c7
+  background-image: url('/imageback.png');
+  background-position: top center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -49,7 +51,7 @@ const Games = () => {
     return (
         <Section>
             <Navigation page={'projects'} language={language} setLanguage={setLanguage} />
-            <GameContainer>
+            <GameContainer className='text-light'>
                 {
                     textLang[language].pages.projects.content.map(element => (
                         <>

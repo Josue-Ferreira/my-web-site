@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import Navigation from "./Navigation";
 import textLang from "../assets/text-lang.json";
+import Typewriter from 'typewriter-effect/dist/core';
+import {BsGithub, BsLinkedin} from 'react-icons/bs'
 
 const Section = styled.section`
-  background: linear-gradient(
-    to top,
-    rgba(189, 195, 199, 0),
-    var(--primary-color)
-  ); //#bdc3c7
+  background-image: url('/imageback.png');
+  background-position: top center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -21,7 +21,7 @@ const Section = styled.section`
 
 const Welcome = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -31,12 +31,16 @@ const Welcome = styled.div`
 
 const Button = styled.a`
   display: block;
+  text-align: center;
   text-decoration: none;
   background-color: var(--secondary-color);
   border-radius: 40px;
   padding: 5px 5vw;
   margin: 5vh 0;
   color: white;//#2c3e50;
+  &:hover{
+    color: inherit;
+  }
 `;
 
 const ImgPhotoProfil = styled.img`
@@ -59,9 +63,9 @@ const Links = styled.div`
   margin: auto;
 `;
 
-const ImgLink = styled.img`
-  height: 5vh;
-  margin-right: 10px;
+const ImgLink = styled.a`
+  font-size: 3rem;
+  margin-right: 20px;
 `;
 
 const Hello = styled.div`
@@ -74,19 +78,24 @@ const Hello = styled.div`
   }
 `;
 
-const ImgReact = styled.img`
-  display: inline;
-  margin-right: 20px;
-  width: 5rem;
-  @media screen and (max-width: 400px) {
-    display: block;
-    margin: 10px;
-  }
-`;
-
 const IntroductionSection = ({ page, language, setLanguage }) => {
+  useEffect(() => {
+    const typewriter = new Typewriter('#job-resume',{
+      autoStart: true,
+      delay: 100
+    });
+
+    typewriter
+      .pauseFor(1500)
+      .typeString(textLang[language].pages.home.h2[0])
+      .pauseFor(300)
+      .deleteAll()
+      .typeString('<img class="img-react" src="/logos/react2.svg" alt="react logo" />'+textLang[language].pages.home.h2[1])
+      .start();
+  }, [language]);
+
   return (
-    <Section>
+    <Section className="text-light" >
       <Navigation page={page} language={language} setLanguage={setLanguage} />
       <Welcome>
         <Hello id="welcome-text">
@@ -94,12 +103,12 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.h1}
             <Name>Josué Ferreira</Name>
           </h1>
-          <ImgReact src="/logos/react2.svg" alt="react logo" />
-          <h2 style={{display: 'inline'}} >{textLang[language].pages.home.h2}</h2>
+          <h2 id="job-resume" style={{display: 'inline'}} ></h2> 
           <Button href={textLang[language].pages.home.cvfile} download>
             {textLang[language].pages.home.cv}
           </Button>
         </Hello>
+        <img src="/spaceship.svg" id="child-spaceship"/>
         <ImgPhotoProfil
           id="photo-profil"
           src="photo_profil.resized.png"
@@ -108,23 +117,20 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
         />
       </Welcome>
       <Links>
-        <a href="https://github.com/Josue-Ferreira" target="_blank">
-          <ImgLink
-            src="/logos/github.png"
-            alt="GitHub link"
-            title="Link to GitHub"
-          />
-        </a>
-        <a
+        <ImgLink 
+          className="text-light" 
+          href="https://github.com/Josue-Ferreira" 
+          target="_blank"
+          >
+          <BsGithub />
+        </ImgLink>
+        <ImgLink
+          className="text-light"
           href="https://www.linkedin.com/in/josué-ferreira-694095276"
           target="_blank"
-        >
-          <ImgLink
-            src="/logos/linkedin.png"
-            alt="LinkedIn link"
-            title="Link to LinkedIn"
-          />
-        </a>
+          >
+          <BsLinkedin />
+        </ImgLink>
         <AiOutlineArrowDown id="arrow" style={{ flex: "1", fontSize: "3em" }} />
       </Links>
     </Section>

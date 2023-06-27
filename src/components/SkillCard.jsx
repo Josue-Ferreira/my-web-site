@@ -3,7 +3,7 @@ import {Card, CardBody, CardTitle} from 'reactstrap';
 import styled from 'styled-components';
 
 const Picture = styled.img`
-    height: 5rem;
+    height: 3rem;
     margin-bottom: 10px;
 `;
 
@@ -12,14 +12,15 @@ const SkillCard = ({cardTitle,cardPicture}) => {
         <Card
             className="text-center"
             style={{
-                maxWidth: '250px',
+                width: '200px',
                 borderRadius: '40px',
-                boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.24)'
+                boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.24)',
+                justifyContent: 'center'
             }}
             >
-            <CardBody>
+            <CardBody style={{padding: '5px', flex: 'none'}}>
                 <Picture src={cardPicture} alt="" />
-                <CardTitle tag="h5">
+                <CardTitle tag="h5" style={{margin: '0 15px'}}>
                     {cardTitle}
                 </CardTitle>
             </CardBody>
