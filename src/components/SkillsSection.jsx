@@ -1,15 +1,5 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import SkillCard from './SkillCard';
-import dataSkills from '../assets/dataSkills.json';
-import textLang from '../assets/text-lang.json';
-import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
-} from 'reactstrap';
 import SkillsCarousel from './SkillsCarousel';
 import SkillForMobile from './SkillForMobile';
 
