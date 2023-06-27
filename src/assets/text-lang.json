@@ -7,16 +7,6 @@
                     "link": "/"
                 },
                 {
-                    "content": "ABOUT ME",
-                    "name": "aboutme",
-                    "link": "/coming-soon/aboutme/"
-                },
-                {
-                    "content": "HOBBIES",
-                    "name": "hobbies",
-                    "link": "/coming-soon/hobbies/"
-                },
-                {
                     "content": "PROJECTS",
                     "name": "projects",
                     "link": "/projects/"
@@ -46,6 +36,7 @@
                 "aboutme": {},
                 "hobbies": {},
                 "projects": {
+                    "name": "Projects",
                     "content": [{
                             "h3": "Space Invader",
                             "picture": "/spaceInvader.resized.png",
@@ -64,7 +55,8 @@
                             "description": "Front-end website made with <em style='color: var(--secondary-color)'>REACT</em> and back-end with <em style='color: var(--secondary-color)'>Express Node.js</em>. Website fecthes an API faker to get clothes. Users can sign up and save cart on localstorage and cloud. Database in <em style='color: var(--secondary-color)'>MySQL</em> (Back-end not deployed yet).",
                             "link": "https://shop-jf-react.netlify.app/"
                         }],
-                    "linkText": "Try it !"
+                    "linkText": "Try it !",
+                    "shortDescription": "More details on Projects page"
                 },
                 "contactme": {
                     "title": "Contact Details",
@@ -79,16 +71,6 @@
                     "content": "ACCUEIL",
                     "name": "home",
                     "link": "/"
-                },
-                {
-                    "content": "PRESENTATION",
-                    "name": "aboutme",
-                    "link": "/coming-soon/aboutme/"
-                },
-                {
-                    "content": "LOISIRS",
-                    "name": "hobbies",
-                    "link": "/coming-soon/hobbies/"
                 },
                 {
                     "content": "PROJETS",
@@ -120,6 +102,7 @@
                 "aboutme": {},
                 "hobbies": {},
                 "projects": {
+                    "name": "Projets",
                     "content": [{
                         "h3": "Space Invader",
                         "picture": "/spaceInvader.resized.png",
@@ -138,7 +121,8 @@
                         "description": "La partie front-end du site développée avec <em style='color: var(--secondary-color)'>REACT</em> et le back-end avec <em style='color: var(--secondary-color)'>Express Node.js</em>. Les produits sont récupérés depuis une API externe (faker). Un utilisateur peut s'inscrire et sauvegarder son panier localement et sur le serveur.<em style='color: var(--secondary-color)'>MySQL</em> a été utilisé pour la base de données (le back-end non déployé pour le moment).",
                         "link": "https://shop-jf-react.netlify.app/"
                     }],
-                    "linkText": "Essayez-le !"
+                    "linkText": "Essayez-le !",
+                    "shortDescription": "Pour plus de détails, rendez-vous sur la page Projets"
                 },
                 "contactme": {
                     "title": "Mes coordonnées",

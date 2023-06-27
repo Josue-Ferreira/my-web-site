@@ -31,11 +31,11 @@ const SkillForMobile = ({language}) => {
         <div className='skills-mobile'>
             {
                 dataSkills.category.map((category, i) => (
-                    <SkillContainer>
+                    <SkillContainer key={textLang[language].pages.home.skillsTitle[i]+'-mobile'}>
                         <Title className="text-light">{textLang[language].pages.home.skillsTitle[i]}</Title>
                         <Container>
                                 {category[category.name].map((skill) => (
-                                    <SkillCard key={skill.name} cardTitle={skill.name} cardPicture={skill.picture}/>
+                                    <SkillCard key={skill.name+'-mobile'} cardTitle={skill.name} cardPicture={skill.picture}/>
                                 ))}
                         </Container>
                     </SkillContainer>
