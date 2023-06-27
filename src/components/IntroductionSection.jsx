@@ -108,7 +108,7 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.cv}
           </Button>
         </Hello>
-        <img src="/spaceship.svg" id="child-spaceship"/>
+        <a href="https://josue-ferreira.github.io/galaxia/" target="_blank" id="child-spaceship"><img src="/spaceship.svg" /></a>
         <ImgPhotoProfil
           id="photo-profil"
           src="photo_profil.resized.png"

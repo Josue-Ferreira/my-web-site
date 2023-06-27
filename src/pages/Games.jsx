@@ -10,9 +10,10 @@ const Section = styled.section`
   background-image: url('/imageback.png');
   background-position: top center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 `;
 
 const GameContainer = styled.div`
