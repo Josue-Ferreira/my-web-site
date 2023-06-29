@@ -6,7 +6,7 @@
    fill="none"
    version="1.1"
    id="svg1099"
-   sodipodi:docname="spaceship"
+   sodipodi:docname="spaceship.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,7 +24,7 @@
      showgrid="false"
      inkscape:zoom="1.2557003"
      inkscape:cx="248.46693"
-     inkscape:cy="307.79637"
+     inkscape:cy="309.38911"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -34,7 +34,7 @@
   <g
      clip-path="url(#clip1_110_3490)"
      id="g674"
-     transform="translate(-506.09209,5.7923388)">
+     transform="rotate(-118.52987,341.92673,237.59711)">
     <path
        style="mix-blend-mode:screen;fill:url(#paint23_linear_110_3490)"
        d="m 624.797,111.23 39.763,19.951 7.303,-16.95 -37.406,-20.5624 c 0,0 -7.932,12.3284 -9.66,17.5614 z"

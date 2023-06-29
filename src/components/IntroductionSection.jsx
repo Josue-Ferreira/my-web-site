@@ -21,7 +21,7 @@ const Section = styled.section`
 
 const Welcome = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -108,13 +108,16 @@ const IntroductionSection = ({ page, language, setLanguage }) => {
             {textLang[language].pages.home.cv}
           </Button>
         </Hello>
-        <a href="https://josue-ferreira.github.io/galaxia/" target="_blank" id="child-spaceship"><img src="/spaceship.svg" /></a>
-        <ImgPhotoProfil
-          id="photo-profil"
-          src="photo_profil.resized.png"
-          alt="Josué Ferreira photo"
-          title="Josué Ferreira"
-        />
+        {/* <a href="https://josue-ferreira.github.io/galaxia/" target="_blank" id="child-spaceship"><img src="/spaceship.svg" /></a> */}
+        <div className="content-img-profile">
+          {/* <ImgPhotoProfil
+            id="photo-profil"
+            src="photo_profil.resized.png"
+            alt="Josué Ferreira photo"
+            title="Josué Ferreira"
+          /> */}
+          <a href="https://josue-ferreira.github.io/galaxia/" target="_blank" id="child-spaceship"><img src="/spaceship.svg" /></a> 
+        </div>
       </Welcome>
       <Links>
         <ImgLink 
