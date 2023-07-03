@@ -55,6 +55,10 @@
                 {
                     "name": "ViteJS",
                     "picture": "/logos/vite.svg"
+                },
+                {
+                    "name": "Docker",
+                    "picture": "/logos/docker.png"
                 }
             ]
         },
