@@ -38,6 +38,12 @@
                 "projects": {
                     "name": "Projects",
                     "content": [{
+                        "h3": "MarketPlace",
+                        "picture": "/marketplace.resized.png",
+                        "description": "Full-stack website in <em style='color: var(--secondary-color)'>REACT</em> for front-end and <em style='color: var(--secondary-color)'>Express Node.js</em> for back-end with <em style='color: var(--secondary-color)'>MySQL</em> database. The marketplace is deployed with <em style='color: var(--secondary-color)'>Docker</em> in Railway.app. User can sign up, comment products, sell its own products and chat with other sellers soon. Database was seeded with an API (faker). Tools I used : <ul><li>Redux</li><li>React-router-dom</li><li>Styled-components</li><li>Cloudinary</li><li>Argon2</li><li>JSONWebToken</li><li>NodeMailer</li><li>WebSocket (socket.io)</li><li>Docker</li></ul>",
+                        "link": "https://lecoincoin-client-production.up.railway.app/"
+                        },
+                        {
                             "h3": "Space Invader",
                             "picture": "/spaceInvader.resized.png",
                             "description": "I had created a Space Invader game with <em style='color: var(--secondary-color)'>JavaScript Vanilla</em> to work in desktop web browsers",
@@ -104,6 +110,12 @@
                 "projects": {
                     "name": "Projets",
                     "content": [{
+                        "h3": "MarketPlace",
+                        "picture": "/marketplace.resized.png",
+                        "description": "Site web full-stack en <em style='color: var(--secondary-color)'>REACT</em> pour le front-end et <em style='color: var(--secondary-color)'>Express Node.js</em> pour le back-end avec une base de données <em style='color: var(--secondary-color)'>MySQL</em>. Le site est déployé avec <em style='color: var(--secondary-color)'>Docker</em> sur Railway.app. Un utilisateur peut s'inscrire, commenter des produits, proposer ses propres produits à vendre et bientôt discuter avec les vendeurs. La base de données a été peuplée par défaut depuis une API externe (faker). Ce site est développé avec : <ul><li>Redux</li><li>React-router-dom</li><li>Styled-components</li><li>Cloudinary</li><li>Argon2</li><li>JSONWebToken</li><li>NodeMailer</li><li>WebSocket (socket.io)</li><li>Docker</li></ul>",
+                        "link": "https://lecoincoin-client-production.up.railway.app/"
+                    },
+                    {
                         "h3": "Space Invader",
                         "picture": "/spaceInvader.resized.png",
                         "description": "J'ai créé un jeu Space Invader en <em style='color: var(--secondary-color)'>JavaScript Vanilla</em> qui fonctionne sur les navigateurs web desktop",
